@@ -5,7 +5,7 @@ const client = new JSONRPCClient((request) => {
   console.log(request);
   return axios({
   method: 'post',
-  mode: 'cors',
+  mode: 'no-cors',
   url: process.env.REACT_APP_BOOKING_API_URL,
   headers: {
     'Access-Control-Allow-Origin': '*',
