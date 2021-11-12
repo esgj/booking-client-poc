@@ -5,10 +5,8 @@ const client = new JSONRPCClient((request) => {
   console.log(request);
   return axios({
   method: 'post',
-  crossDomain: true,
   url: process.env.REACT_APP_BOOKING_API_URL,
   headers: {
-    'Access-Control-Allow-Origin': '*',
     'Content-Type': 'application/json'
   },
   data: JSON.stringify(request)
