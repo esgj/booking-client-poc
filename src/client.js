@@ -1,7 +1,7 @@
 const { JSONRPCClient } = require("json-rpc-2.0");
 const axios = require('axios');
 
-const client = new JSONRPCClient((request) => { 
+const client = new JSONRPCClient((request, { token }) => { 
   return axios({
   method: 'post',
   url: process.env.REACT_APP_BOOKING_API_URL,
