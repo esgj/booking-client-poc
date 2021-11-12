@@ -1,1 +1,1 @@
-export const test = async () => 'Hello';
+module.exports.test = async () => 'Hello';
