@@ -14,5 +14,5 @@ const client = new JSONRPCClient((request) => {
 
 module.exports = {
   getAllBookings: () => client.request('getBookings'),
-  bookingClient: client
+  addBooking: (value) => client.request('addBooking', value)
 }
