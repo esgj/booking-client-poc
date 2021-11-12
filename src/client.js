@@ -3,7 +3,7 @@ const axios = require('axios');
 
 const client = new JSONRPCClient((request) => axios({
   method: 'post',
-  url: 'http://localhost:3000/json-rpc',
+  url: process.env.BOOKING_JSONRPC_API_URL,
   headers: {
     'content-type': 'application/json'
   },
