@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/egjendem/booking-client-poc/issues"
   },
-  "homepage": "https://github.com/egjendem/booking-client-poc#readme"
+  "homepage": "https://github.com/egjendem/booking-client-poc#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "json-rpc-2.0": "^0.2.19"
+  }
 }
