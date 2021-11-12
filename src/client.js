@@ -5,7 +5,7 @@ const client = new JSONRPCClient((request) => {
   console.log(request);
   return axios({
   method: 'post',
-  url: process.env.BOOKING_API_URL,
+  url: process.env.REACT_APP_BOOKING_API_URL,
   headers: {
     'content-type': 'application/json'
   },
